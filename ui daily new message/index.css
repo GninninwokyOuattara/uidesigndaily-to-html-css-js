@@ -1,0 +1,158 @@
+* {
+    box-sizing: border-box;
+}
+
+html {
+    margin: 0;
+    /* height: 100%; */
+}
+
+body {
+    background-color: #f4f6fa;
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+    font-family: "Open Sans", sans-serif;
+}
+
+.back-container {
+    display: block;
+    position: absolute;
+    background-color: rgba(240, 244, 250, 1);
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    width: 25rem;
+    margin: 5rem auto 0 auto;
+    padding: 3rem;
+}
+
+.container {
+    background-color: #ffffff;
+    border-radius: 0.5rem;
+    box-shadow: 7px 7px 1px 1px #999a9f0e;
+    height: 26rem;
+    padding: 2rem;
+    position: relative;
+}
+
+.header-container {
+    position: relative;
+    margin-bottom: 1rem;
+}
+
+.header-container h3 {
+    margin: 0;
+    width: calc(100% - 1.5rem);
+}
+
+.header-container h3::first-letter {
+    text-transform: uppercase;
+}
+
+.header-container i {
+    position: absolute;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    font-size: 1.5rem;
+}
+
+.search-field {
+    background-color: #f4f6fa;
+    height: 3rem;
+    padding: 0.6rem 0 0 1rem;
+    color: #999a9f;
+    vertical-align: middle;
+}
+
+.search-field i {
+    margin-right: 0.5rem;
+}
+
+.search-input:focus {
+    outline: none;
+}
+
+.search-input {
+    border: none;
+    background-color: #f4f6fa;
+}
+
+h4 {
+    margin: 1.5rem 0;
+    font-family: sans-serif;
+    font-weight: 600;
+    font-size: 0.5rem;
+    text-transform: uppercase;
+}
+
+.conversations {
+    position: absolute;
+    left: 1rem;
+    right: 1rem;
+    bottom: 1rem;
+    top: 11rem;
+    overflow-y: scroll;
+}
+
+::-webkit-scrollbar {
+    width: 2px;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: #f4f6fa;
+}
+
+.conversation {
+    padding: 0 1rem;
+    height: 3.5rem;
+}
+
+.conversation:hover {
+    background-color: #f4f6fa;
+    border-radius: 5px;
+}
+
+.conversation > * {
+    vertical-align: middle;
+}
+
+.img {
+    display: inline-block;
+    width: 2rem;
+    height: 2rem;
+    border: 1px solid #999a9f;
+    border-radius: 50%;
+}
+
+.info {
+    padding-top: 0.5rem;
+    display: inline-block;
+    width: calc(100% - 4rem);
+    height: 100%;
+}
+
+.name,
+.link {
+    margin: 0;
+    height: 2px;
+}
+
+.link {
+    font-size: 0.5rem;
+    font-weight: bolder;
+}
+
+.name {
+    display: inline-block;
+}
+
+.conversation i {
+    color: #999a9f;
+}
+
+.conversation .selected {
+    color: #327be8;
+}
