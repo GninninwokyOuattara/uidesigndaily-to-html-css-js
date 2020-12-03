@@ -89,6 +89,7 @@ li.benefit {
     list-style-type: none;
     margin: 1rem 0;
     font-size: 0.8rem;
+    font-weight: lighter;
 }
 
 li.benefit:before {
@@ -104,3 +105,22 @@ a.subscribe {
     width: 80%;
     height: 2.3rem;
 }
+
+@media (max-width: 40rem) {
+    .cards {
+        /* display: none; */
+        position: relative;
+        margin: auto;
+        flex-direction: column;
+    }
+
+    .cards > div {
+        margin: 1rem 0;
+    }
+}
+
+/* @media (min-width: 40rem) {
+    .cards {
+        display: none;
+    }
+} */
