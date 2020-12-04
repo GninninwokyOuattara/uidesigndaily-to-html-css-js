@@ -1,0 +1,19 @@
+:root {
+    --dark-purple: #1e1c36;
+    --lighter-gray: #c7c7d6;
+    --purple: #6d74f7;
+    --bold-gray: #54546b;
+    --light-purple: #8c8cb0;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+    height: 100%;
+}
+
+body {
+    margin: 0;
+}
