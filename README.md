@@ -1,2 +1,2 @@
 # uidesigndaily-to-html-css-js
-design from uidesigndaily translated into html css webpages
+A collection of [UIDesignDaily] design transcripted into html css for probable later reference. 

@@ -4,12 +4,49 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Mulish:wght@400;500;700&display=swap"
+        rel="stylesheet">
     <link rel="stylesheet" href="index.css">
     <title>Document</title>
 </head>
 
 <body>
-
+    <div class="grid-container">
+        <section class="main">
+            <h1 class="main__header">absolute time range</h1>
+            <label for="start" class="selector-container"><span>from</span>
+                <select name="" id="" class="selector__list">
+                    <option value="">now-1h</option>
+                </select></label>
+            <label for="start" class="selector-container"><span>to</span>
+                <select name="" id="" class="selector__list">
+                    <option value="">now</option>
+                </select></label>
+            <button class="btn__apply">apply time range</button>
+            <p class="info">want to find out more ? <a href=""
+                    class="info-link">Read the documentation</a></p>
+        </section>
+        <section class="side">
+            <h2 class="side-header">relative time ranges</h2>
+            <ul class="time-range__list">
+                <li class="time-range__item">last 5 minutes</li>
+                <li class="time-range__item">last 15 minutes</li>
+                <li class="time-range__item">last 30 minutes</li>
+                <li class="time-range__item">last 1 hour</li>
+                <li class="time-range__item">last 3 hours</li>
+                <li class="time-range__item">last 6 hours</li>
+                <li class="time-range__item">last 12 hours</li>
+                <li class="time-range__item">load more</li>
+            </ul>
+        </section>
+        <section class="footer">
+            <div class="time-zone">utc</div>
+            <a href="" class="btn__time-zone--change">
+                change the time zone
+            </a>
+        </section>
+    </div>
 </body>
 
 </html>
