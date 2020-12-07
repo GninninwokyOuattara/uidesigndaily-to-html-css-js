@@ -1,0 +1,105 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #f7f9fc;
+    padding: 4.5vh;
+    font-family: Mulish;
+    color: #34426c;
+}
+
+.container {
+    background-color: #ffffff;
+    border-radius: 1rem;
+    padding: 3rem;
+}
+.container .offer-types {
+    background-color: #f7f9fc;
+    width: 14rem;
+    height: 3rem;
+    display: flex;
+    align-items: center;
+    padding: 0 0.5rem;
+    justify-content: space-around;
+}
+.container .offer-types .offer {
+    text-decoration: none;
+    display: block;
+    width: 45%;
+    padding-left: 1rem;
+    height: 80%;
+    line-height: 2.5rem;
+    border-radius: 2px;
+}
+.container .offer-types .selected {
+    background-color: #ffffff;
+    box-shadow: 0 1px 2px -1px #333;
+}
+.container .offer-advantages {
+    margin-top: 4rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 3rem;
+}
+.container .offer-advantages .advantage .advantage__header {
+    font-size: 0.8rem;
+    color: #909bad;
+}
+.container .offer-advantages .advantage .advantage__list {
+    list-style-type: none;
+    padding-left: 0;
+}
+.container .offer-advantages .advantage .advantage__item {
+    margin: 0.5rem 0;
+}
+.container .tools {
+    margin-top: 2rem;
+    background-color: #f7f9fc;
+    padding: 1rem;
+    border-radius: 5px;
+}
+.container .tools .tools__header {
+    font-size: 0.8rem;
+    color: #909bad;
+}
+.container .tools .tools-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 1rem;
+    justify-content: space-around;
+}
+.container .tools .tools-container .tool {
+    background-color: #ffffff;
+    padding: 1rem;
+    color: #000000;
+    font-weight: 500;
+    border-radius: 5px;
+    transition: box-shadow 500ms ease-out;
+}
+.container .tools .tools-container .tool:hover {
+    box-shadow: 0 5px 10px -5px #333;
+}
+.container .tools .tools-container .tool .img-container {
+    width: 2.5rem;
+    position: relative;
+    left: -1rem;
+    text-align: right;
+    padding-right: 0.5rem;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+.container .tools .tools-container .tool .light-blue {
+    background-color: #f6f8ff;
+}
+.container .tools .tools-container .tool .light-purple {
+    background-color: #fcf3ff;
+}
+.container .tools .tools-container .tool .light-red {
+    background-color: #ffedf5;
+}
+.container .tools .tools-container .tool .light-green {
+    background-color: #f8fcec;
+}
+
+/*# sourceMappingURL=index.css.map */

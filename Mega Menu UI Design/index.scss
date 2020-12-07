@@ -1,0 +1,134 @@
+$color: (
+    text-color: #34426c,
+    box-background: #ffffff,
+    section-header: #909bad,
+    c-green: #82bc24,
+    c-blue: #3864f3,
+    body-color: #f7f9fc,
+    c-purple: #d257fe,
+    c-red: #f45995,
+    light-green: #f8fcec,
+    light-purple: #fcf3ff,
+    light-red: #ffedf5,
+    light-blue: #f6f8ff,
+);
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: map-get($map: $color, $key: body-color);
+    padding: 4.5vh;
+    font-family: Mulish;
+    color: map-get($map: $color, $key: text-color);
+}
+
+.container {
+    background-color: map-get($map: $color, $key: box-background);
+    border-radius: 1rem;
+    padding: 3rem;
+
+    .offer-types {
+        background-color: map-get($map: $color, $key: body-color);
+        width: 14rem;
+        height: 3rem;
+        display: flex;
+        align-items: center;
+        padding: 0 0.5rem;
+        justify-content: space-around;
+
+        .offer {
+            text-decoration: none;
+            display: block;
+            width: 45%;
+            padding-left: 1rem;
+            height: 80%;
+            line-height: 2.5rem;
+            border-radius: 2px;
+        }
+
+        .selected {
+            background-color: map-get($map: $color, $key: box-background);
+            box-shadow: 0 1px 2px -1px #333;
+        }
+    }
+
+    .offer-advantages {
+        margin-top: 4rem;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        gap: 3rem;
+
+        .advantage {
+            .advantage__header {
+                font-size: 0.8rem;
+                color: map-get($map: $color, $key: section-header);
+            }
+
+            .advantage__list {
+                list-style-type: none;
+                padding-left: 0;
+            }
+
+            .advantage__item {
+                margin: 0.5rem 0;
+            }
+        }
+    }
+
+    .tools {
+        margin-top: 2rem;
+        background-color: map-get($map: $color, $key: body-color);
+        padding: 1rem;
+        border-radius: 5px;
+
+        .tools__header {
+            font-size: 0.8rem;
+            color: map-get($map: $color, $key: section-header);
+        }
+
+        .tools-container {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr 1fr;
+            gap: 1rem;
+            justify-content: space-around;
+
+            .tool {
+                background-color: map-get($map: $color, $key: box-background);
+                padding: 1rem;
+                color: #000000;
+                font-weight: 500;
+                border-radius: 5px;
+                transition: box-shadow 500ms ease-out;
+
+                &:hover {
+                    box-shadow: 0 5px 10px -5px #333;
+                }
+
+                .img-container {
+                    width: 2.5rem;
+                    position: relative;
+                    left: -1rem;
+                    text-align: right;
+                    padding-right: 0.5rem;
+                    border-top-right-radius: 10px;
+                    border-bottom-right-radius: 10px;
+                }
+
+                .light-blue {
+                    background-color: map-get($map: $color, $key: light-blue);
+                }
+                .light-purple {
+                    background-color: map-get($map: $color, $key: light-purple);
+                }
+                .light-red {
+                    background-color: map-get($map: $color, $key: light-red);
+                }
+                .light-green {
+                    background-color: map-get($map: $color, $key: light-green);
+                }
+            }
+        }
+    }
+}
