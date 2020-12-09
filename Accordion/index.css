@@ -23,7 +23,8 @@ body {
   left: 0;
   right: 0;
   top: 0;
-  bottom: 0; }
+  bottom: 0;
+  box-shadow: 0px 28px 40px -20px rgba(107, 99, 255, 0.306079); }
   .container .top-section {
     height: 20%;
     margin-bottom: 1.5rem; }
@@ -44,10 +45,14 @@ body {
       flex-direction: column;
       align-items: stretch;
       overflow-y: scroll; }
+      .container .bottom-section .accordion__list::-webkit-scrollbar {
+        width: 2px; }
+      .container .bottom-section .accordion__list::-webkit-scrollbar-thumb {
+        background-color: #f4f6fa; }
       .container .bottom-section .accordion__list .opened {
         background-color: #f0f4fd;
         border-radius: 5px;
-        margin: 0.5rem 0; }
+        margin-bottom: 0.5rem; }
       .container .bottom-section .accordion__list .accordion__item {
         display: flex;
         align-items: top;
@@ -60,7 +65,9 @@ body {
           .container .bottom-section .accordion__list .accordion__item .item__detail .item__title {
             margin-top: 0.2rem; }
           .container .bottom-section .accordion__list .accordion__item .item__detail .info {
-            display: none; }
+            overflow: hidden;
+            max-height: 0;
+            transition: max-height 1s ease-out; }
             .container .bottom-section .accordion__list .accordion__item .item__detail .info .item__button {
               width: 84px;
               height: 22px;
@@ -71,11 +78,5 @@ body {
               border: none;
               margin-top: 1rem;
               cursor: pointer; }
-
-::-webkit-scrollbar {
-  width: 2px; }
-
-::-webkit-scrollbar-thumb {
-  background-color: #f4f6fa; }
 
 /*# sourceMappingURL=index.css.map */

@@ -25,6 +25,7 @@ body {
     right: 0;
     top: 0;
     bottom: 0;
+    box-shadow: 0px 28px 40px -20px rgba(107, 99, 255, 0.306079);
     // overflow: hidden;
 
     .top-section {
@@ -58,13 +59,23 @@ body {
             align-items: stretch;
             overflow-y: scroll;
 
+            &::-webkit-scrollbar {
+                width: 2px;
+            }
+
+            &::-webkit-scrollbar-thumb {
+                background-color: #f4f6fa;
+            }
+
             .opened {
                 background-color: #f0f4fd;
                 border-radius: 5px;
-                margin: 0.5rem 0;
+                margin-bottom: 0.5rem;
             }
 
             .accordion__item {
+                // max-height: 100px;
+
                 display: flex;
                 align-items: top;
                 padding: 1rem;
@@ -83,7 +94,10 @@ body {
                     }
 
                     .info {
-                        display: none;
+                        overflow: hidden;
+                        max-height: 0;
+                        transition: max-height 1s ease-out;
+                        // display: none;
 
                         .item__button {
                             width: 84px;
@@ -101,12 +115,4 @@ body {
             }
         }
     }
-}
-
-::-webkit-scrollbar {
-    width: 2px;
-}
-
-::-webkit-scrollbar-thumb {
-    background-color: #f4f6fa;
 }
