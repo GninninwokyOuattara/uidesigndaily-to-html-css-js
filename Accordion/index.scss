@@ -1,0 +1,112 @@
+* {
+    box-sizing: border-box;
+}
+
+html  {
+    height: 100%;
+}
+body {
+    background: linear-gradient(135deg, #fdf5f3 0%, #ecf3ff 100%);
+    font-family: Mulish;
+    font-size: 0.65rem;
+    height: 100%;
+}
+
+.container {
+    position: absolute;
+    height: 100%;
+    width: 350px;
+    height: 475px;
+    background-color: #ffffff;
+    padding: 2rem;
+    border-radius: 5px;
+    margin: auto;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    // overflow: hidden;
+
+    .top-section {
+        // height: 94px;
+        height: 20%;
+        margin-bottom: 1.5rem;
+    }
+
+    hr.divider {
+        border: 1px solid;
+        color: #f0f4fd;
+        position: relative;
+        margin: -2rem;
+        // left: -2rem;
+        // right: -2rem;
+    }
+
+    .bottom-section {
+        height: 70%;
+        margin-top: 3rem;
+        overflow-y: hidden;
+
+        // height: 100%;
+
+        .accordion__list {
+            height: 100%;
+            list-style: none;
+            padding-left: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: stretch;
+            overflow-y: scroll;
+
+            .opened {
+                background-color: #f0f4fd;
+                border-radius: 5px;
+                margin: 0.5rem 0;
+            }
+
+            .accordion__item {
+                display: flex;
+                align-items: top;
+                padding: 1rem;
+                // margin-left: 0;
+
+                i {
+                    color: black;
+                }
+
+                .item__detail {
+                    margin: 0 0 0 1rem;
+                    width: 100%;
+
+                    .item__title {
+                        margin-top: 0.2rem;
+                    }
+
+                    .info {
+                        display: none;
+
+                        .item__button {
+                            width: 84px;
+                            height: 22px;
+                            border-radius: 30px;
+                            font-size: 0.6rem;
+                            background-color: #6b63ff;
+                            color: #ffffff;
+                            border: none;
+                            margin-top: 1rem;
+                            cursor: pointer;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+::-webkit-scrollbar {
+    width: 2px;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: #f4f6fa;
+}

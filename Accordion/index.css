@@ -1,0 +1,81 @@
+@charset "UTF-8";
+* {
+  box-sizing: border-box; }
+
+html  {
+  height: 100%; }
+
+body {
+  background: linear-gradient(135deg, #fdf5f3 0%, #ecf3ff 100%);
+  font-family: Mulish;
+  font-size: 0.65rem;
+  height: 100%; }
+
+.container {
+  position: absolute;
+  height: 100%;
+  width: 350px;
+  height: 475px;
+  background-color: #ffffff;
+  padding: 2rem;
+  border-radius: 5px;
+  margin: auto;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0; }
+  .container .top-section {
+    height: 20%;
+    margin-bottom: 1.5rem; }
+  .container hr.divider {
+    border: 1px solid;
+    color: #f0f4fd;
+    position: relative;
+    margin: -2rem; }
+  .container .bottom-section {
+    height: 70%;
+    margin-top: 3rem;
+    overflow-y: hidden; }
+    .container .bottom-section .accordion__list {
+      height: 100%;
+      list-style: none;
+      padding-left: 0;
+      display: flex;
+      flex-direction: column;
+      align-items: stretch;
+      overflow-y: scroll; }
+      .container .bottom-section .accordion__list .opened {
+        background-color: #f0f4fd;
+        border-radius: 5px;
+        margin: 0.5rem 0; }
+      .container .bottom-section .accordion__list .accordion__item {
+        display: flex;
+        align-items: top;
+        padding: 1rem; }
+        .container .bottom-section .accordion__list .accordion__item i {
+          color: black; }
+        .container .bottom-section .accordion__list .accordion__item .item__detail {
+          margin: 0 0 0 1rem;
+          width: 100%; }
+          .container .bottom-section .accordion__list .accordion__item .item__detail .item__title {
+            margin-top: 0.2rem; }
+          .container .bottom-section .accordion__list .accordion__item .item__detail .info {
+            display: none; }
+            .container .bottom-section .accordion__list .accordion__item .item__detail .info .item__button {
+              width: 84px;
+              height: 22px;
+              border-radius: 30px;
+              font-size: 0.6rem;
+              background-color: #6b63ff;
+              color: #ffffff;
+              border: none;
+              margin-top: 1rem;
+              cursor: pointer; }
+
+::-webkit-scrollbar {
+  width: 2px; }
+
+::-webkit-scrollbar-thumb {
+  background-color: #f4f6fa; }
+
+/*# sourceMappingURL=index.css.map */
