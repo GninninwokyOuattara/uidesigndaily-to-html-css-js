@@ -1,0 +1,193 @@
+* {
+    box-sizing: border-box;
+}
+
+html {
+    height: 100%;
+}
+
+body {
+    height: 100%;
+    background: linear-gradient(119.11deg, #ff7982 0%, #ff8d53 100%);
+    padding: 2rem;
+    font-family: "Mulish";
+    font-size: 0.8rem;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #ffffff;
+    padding: 0 1rem;
+    height: 4rem;
+    color: #09183f;
+    margin: 0;
+
+    .main-links,
+    .log-links {
+        list-style-type: none;
+        display: flex;
+        padding: 0;
+    }
+
+    .link,
+    .log-links li {
+        margin: 0rem 1.5rem;
+        text-decoration: none;
+    }
+
+    .link a {
+        text-decoration: none;
+    }
+
+    .active {
+        font-weight: 600;
+    }
+
+    .btn-search {
+        margin-left: auto;
+    }
+}
+
+.hero {
+    margin: 0;
+    height: 17rem;
+    background-image: url(hero.png);
+    background-size: cover;
+    position: relative;
+
+    .intro-background {
+        height: 80%;
+        // width: 20rem;
+        width: 35%;
+        background: #09183f;
+        opacity: 0.5;
+        box-shadow: 0px 14px 25px -10px rgba(9, 24, 63, 0.17);
+        border-radius: 10px;
+        position: absolute;
+        margin: auto;
+        padding: 2rem;
+        left: 0;
+        right: 0;
+        top: 0;
+        bottom: 0;
+    }
+
+    .intro {
+        // height: 9rem;
+        height: 80%;
+        // width: 20rem;
+        width: 35%;
+        // background-color: transparent;
+        z-index: 100;
+        box-shadow: 0px 14px 25px -10px rgba(9, 24, 63, 0.17);
+        border-radius: 10px;
+        position: absolute;
+        margin: auto;
+        padding: 0 2rem;
+        left: 0;
+        right: 0;
+        top: 0;
+        bottom: 0;
+        color: white;
+        // opacity: 1;
+
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        * {
+            opacity: 1;
+            margin: 0;
+            color: #ffffff;
+            margin-bottom: 1.5rem;
+        }
+
+        .intro__header {
+            margin-top: 2rem;
+            margin-bottom: 2rem;
+        }
+
+        .btn-shop {
+            border: none;
+            background: linear-gradient(90.09deg, #ff748d 0%, #ff8e4f 100%);
+            border-radius: 50px;
+            height: 2rem;
+            width: 8rem;
+            margin-top: 0.5rem;
+            cursor: pointer;
+        }
+    }
+}
+
+.collections {
+    // background-color: ;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    position: relative;
+
+    .collections-background {
+        position: absolute;
+        background-color: #f4f8fd;
+        height: 22rem;
+        width: 100%;
+        z-index: 10;
+    }
+
+    .collection {
+        background-color: #ffffff;
+        width: 20rem;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        margin: 4rem 1rem;
+        padding: 1rem;
+        z-index: 15;
+
+        .top {
+            display: flex;
+            flex-direction: column;
+            justify-items: center;
+
+            .collection__header {
+                width: 15rem;
+                margin: auto;
+                text-align: center;
+            }
+
+            .collection__info {
+                margin: auto;
+                text-align: center;
+                margin-top: 1rem;
+            }
+
+            .btn-purchase {
+                border: 1px solid #09183f;
+                background-color: #ffffff;
+                border-radius: 50px;
+                width: 10rem;
+                height: 1.5rem;
+                margin: auto;
+                margin-top: 2rem;
+            }
+        }
+
+        .bottom {
+            margin: -1rem;
+            margin-top: 2rem;
+            height: 13rem;
+        }
+
+        .left {
+            background-image: url(left.png);
+            background-size: cover;
+        }
+
+        .right {
+            background-image: url(right.png);
+            background-size: cover;
+        }
+    }
+}
