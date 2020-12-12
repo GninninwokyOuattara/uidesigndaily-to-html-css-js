@@ -1,0 +1,133 @@
+* {
+    box-sizing: border-box;
+}
+
+html {
+    height: 100%;
+}
+
+body {
+    background-image: url("background.png");
+    background-size: cover;
+    height: 100%;
+    padding-top: 3rem;
+    color: #2b2862;
+    font-family: "IBM Plex Sans", "Merriweather", sans-serif;
+}
+
+.container__background {
+    // width: 1000px;
+    // height: 200px;
+    background: #ffffff;
+    mix-blend-mode: normal;
+    opacity: 0.66;
+    border-radius: 16px 16px 0px 0px;
+    position: absolute;
+    margin: auto;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: -10;
+    filter: blur(51.6474px);
+    background-size: cover;
+}
+
+.container__background2 {
+    background: #ffffff;
+    mix-blend-mode: normal;
+    opacity: 0.66;
+    mix-blend-mode: normal;
+    opacity: 0.66;
+    border-radius: 16px 16px 0px 0px;
+    position: absolute;
+    margin: auto;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: -9;
+}
+
+.container {
+    position: relative;
+    margin: auto;
+    width: 50rem;
+    padding: 1rem;
+    height: 100%;
+
+    .navbar {
+        display: flex;
+        justify-content: space-between;
+
+        .navbar__brand {
+            transform: scale(0.7);
+        }
+
+        .navbar__links {
+            display: flex;
+            align-items: center;
+            list-style: none;
+            font-weight: 500;
+
+            .navbar__link {
+                margin: 0 0.5rem;
+            }
+
+            .signup {
+                background-color: #2b2862;
+                color: #ffffff;
+                height: 2.3rem;
+                width: 6rem;
+                border-radius: 5px;
+                text-align: center;
+                line-height: 2.3rem;
+            }
+        }
+    }
+}
+
+.main-content {
+    margin: 5rem 3rem;
+
+    .main-content__header {
+        font-family: "Merriweather";
+        font-size: 2.1rem;
+    }
+}
+
+.features {
+    margin: 0 3rem;
+    display: flex;
+
+    .feature {
+        width: 30%;
+        margin: 0.25rem;
+        background-color: #ffffff;
+        border-radius: 5px;
+        padding: 1rem;
+
+        .feature__header {
+            font-size: 1rem;
+            font-family: "Merriweather";
+        }
+
+        .feature__location {
+            border: none;
+            color: #606dfe;
+        }
+
+        .feature__info {
+            font-size: 0.6rem;
+        }
+
+        .feature-btn__learn-more {
+            border: 1px solid #d4d7ff;
+            background-color: #ffffff;
+            border-radius: 21px;
+            color: #606dfe;
+            height: 2rem;
+            width: 6rem;
+        }
+    }
+}
